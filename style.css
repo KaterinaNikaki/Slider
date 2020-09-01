@@ -1,0 +1,146 @@
+#slider-container {
+    position: relative;
+    width: 1000px;
+    height: 640px;
+    margin: 0px auto;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#slider-container div {
+    position: absolute;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 640px;
+    display: none;
+}
+
+span {
+    display: inline-block;
+    line-height: 1.5;
+    padding: 10px;
+    opacity: 0.5;
+    opacity: 0;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes animateIn {
+    0% {
+        transform: scale(1.9);
+        opacity: 0;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes animateIn {
+    0% {
+        transform: scale(1.9);
+        opacity: 0;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes toleft {
+    from {
+        left: 1000px;
+    }
+    to {
+        left: 0px;
+    }
+}
+
+@keyframes toleft {
+    from {
+        left: 1000px;
+    }
+    to {
+        left: 0px;
+    }
+}
+
+@-webkit-keyframes totop {
+    from {
+        top: 640px;
+    }
+    to {
+        top: 0px;
+    }
+}
+
+@keyframes totop {
+    from {
+        top: 640px;
+    }
+    to {
+        top: 0px;
+    }
+}
+
+@-webkit-keyframes toright {
+    from {
+        left: -1000px;
+    }
+    to {
+        left: 0px;
+    }
+}
+
+@keyframes toright {
+    from {
+        left: -1000px;
+    }
+    to {
+        left: 0px;
+    }
+}
+
+@-webkit-keyframes tobottom {
+    from {
+        top: -640px;
+    }
+    to {
+        top: 0px;
+    }
+}
+
+@keyframes tobottom {
+    from {
+        top: -640px;
+    }
+    to {
+        top: 0px;
+    }
+}
+
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
